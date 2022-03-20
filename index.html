@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="this is the description" />
+    <title>softweb21</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .n-header {
+        font-size: calc(0.475rem + 2.7vw);
+        font-weight: 300;
+        line-height: 1;
+        text-align: center !important;
+        margin-top: 2.5rem !important;
+        margin-bottom: 1.5rem !important;
+      }
+
+      .text-xl {
+        font-size: 14px;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .text-xs {
+        font-size: 16px;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 200;
+      }
+      .m-header {
+        font-size: calc(1.475rem + 2.7vw);
+        font-weight: 300;
+        line-height: 1.2;
+        text-align: center !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+      }
+      .h-main {
+        background-image: url("https://source.unsplash.com/1600x900/?tech,technology");
+        padding-top: 0;
+        margin-top: 0;
+        height: 100vh;
+      }
+
+      .menu-block-1 {
+        height: 32rem;
+      }
+      .menu-phone {
+        height: 30rem;
+      }
+      .m-top {
+        margin-top: 12%;
+        /* to make blur */
+            /* -webkit-filter: blur(0px);
+    margin-top: 12%; */
+      }
+      nav .fa {
+        display: none;
+      }
+      .menu-2-i{
+        margin-left: 1.25rem/* 20px */;
+    margin-right: 1.25rem/* 20px */;
+      }
+      @media screen and (max-width: 900px) and (min-width: 600px) {
+        nav .fa {
+          display: block;
+          color: #fff;
+          margin: 10px;
+          font-size: 22px;
+          cursor: pointer;
+        }
+        .uls {
+          
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          
+        }
+        .lis {
+          margin-top: 5px;
+          border: 0;
+        }
+        .menu_div{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          
+        }
+        .menu_div img{
+          margin: 0;
+         
+        }
+        .menu-2-i{
+          margin:0;
+          height: fit-content;
+        }
+        .menu-block-1 {
+        height: 28rem;
+        margin-bottom: 50px;
+      }
+       .menu-block-1 img{
+        height: 28rem;
+      }
+       .r-w-1, .r-w-3{
+          display: none;
+       }
+       .foot-ul{
+          flex-direction: column;
+       }
+       .top-l-header{
+         display: none;
+       }
+    
+      
+       main .dark\:bg-gray-900 {
+        --tw-bg-opacity: 1;
+    position: relative;
+    right: 1px;
+    /* margin: auto; */
+    font-weight: 400;
+       top: 372px;
+    bottom: 26px;
+    padding-right: 80px;
+    background-color: #00000087;
+}
+
+
+      .icon-t {
+    background-color: #0000005e;
+}
+.h-main {
+    height: 373px;
+}
+      }
+
+      @media screen and (max-width: 600px) and (min-width: 400px) {
+        nav .fa {
+          display: block;
+          color: #fff;
+          margin: 10px;
+          font-size: 22px;
+          cursor: pointer;
+        }
+        .uls {
+          
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          
+        }
+        .lis {
+          margin-top: 5px;
+          border: 0;
+        }
+        .menu_div{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          
+        }
+        .menu_div img{
+          margin: 0;
+         
+        }
+        .menu-2-i{
+          margin:0;
+          height: fit-content;
+        }
+        .menu-block-1 {
+        height: 28rem;
+        margin-bottom: 50px;
+      }
+       .menu-block-1 img{
+        height: 28rem;
+      }
+       .r-w-1, .r-w-3{
+          display: none;
+       }
+       .foot-ul{
+          flex-direction: column;
+       }
+       .top-l-header{
+         display: none;
+       }
+
+       main .dark\:bg-gray-900 {
+        --tw-bg-opacity: 1;
+    position: relative;
+    right: 1px;
+    /* margin: auto; */
+    font-weight: 400;
+    top: 313px;
+    bottom: 26px;
+    padding-right: 80px;
+    background-color: #0000005e;
+}
+
+
+      .icon-t {
+    background-color: #0000005e;
+}
+.h-main {
+    height: 373px;
+}
+      }
+
+       @media screen and (max-width: 400px) and (min-width: 100px) {
+        nav .fa {
+          display: block;
+          color: #fff;
+          margin: 10px;
+          font-size: 22px;
+          cursor: pointer;
+        }
+        .uls {
+          
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          
+        }
+        .lis {
+          margin-top: 5px;
+          border: 0;
+        }
+        .menu_div{
+          display:flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          
+        }
+        .menu_div img{
+          margin: 0;
+         
+        }
+        .menu-2-i{
+          margin:0;
+          height: fit-content;
+        }
+        .menu-block-1 {
+        height: 28rem;
+        margin-bottom: 50px;
+      }
+       .menu-block-1 img{
+        height: 28rem;
+      }
+       .r-w-1, .r-w-3{
+          display: none;
+       }
+       .foot-ul{
+          flex-direction: column;
+       }
+       .top-l-header{
+         display: none;
+       }
+
+       main .dark\:bg-gray-900 {
+         --tw-bg-opacity: 1;
+    position: relative;
+    right: 32px;
+    /* margin: auto; */
+    font-weight: 400;
+    top: 313px;
+    bottom: 28px;
+    padding-right: 50px;
+    background-color: #0000005e;
+       }
+
+
+      .icon-t {
+    background-color: #0000005e;
+}
+.h-main {
+    height: 373px;
+}
+      }
+
+  
+    </style>
+  </head>
+  <body>
+    <main
+      class="bg-[url('https://source.unsplash.com/1600x900/?tech,technology')] h-main"
+    >
+      <nav class="dark:bg-gray-900 font-light flex justify-between py-3 top-nav">
+        <!-- <div class="g1"> -->
+        <span class="dark:text-white text-xl mx-3 py-2 cursor-pointer top-l-header"
+          >SOFT
+          <span  class="border-2 px-2 text-black bg-white mx-2">WEB</span>
+          21
+        </span>
+        <div class="nav-links" id="navLinks"></div>
+        
+        <ul class="flex text-xs justify-end dark:text-white py-2 uls">
+          <li
+            class="lis mx-3 px-2 py-1 cursor-pointer border-b-2 hover:text-cyan-300 border-white-900 hover:border-b-2 hover:border-cyan-300"
+          >
+            <a href="#about-section" class="hover:text-cyan-300"> ABOUT</a>
+          </li>
+          <li
+            class="lis mx-3 px-2 py-1 cursor-pointer border-b-2 hover:text-cyan-300 border-white-900 hover:border-b-2 hover:border-cyan-300"
+          >
+            BlOG
+          </li>
+          <li
+            class="lis mx-3 px-2 py-1 cursor-pointer border-b-2 border-white-900 hover:text-cyan-300hover:border-b-2 hover:border-cyan-300"
+          >
+            <button
+              type="button"
+              class="hover:text-cyan-300"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo"
+            >
+              CONTACT
+            </button>
+          </li>
+          <!-- <li
+            class="lis mr-5 ml-1 px-2 py-2 cursor-pointer border-b-2 border-white-900 hover:text-cyan-300 hover:border-b-2 hover:border-cyan-300"
+          >
+            SIGN IN
+          </li> -->
+        </ul>
+       
+        </div>
+      </nav>
+
+      <div class="m-top">
+        <img
+          class="w-fit px-5 icon-t"
+          src="icons\Soft Web 21-logos_white_2.png"
+          alt=""
+        />
+      </div>
+    </main>
+    <section class="container h-full">
+      <div class="my-28 text-center h-full" id="about-section">
+        <h2 class="m-header border-b-2">About Us</h2>
+        <div class="mt-24">
+          <h4 class="n-header">Our Mission</h4>
+          <p class="italic text-center text-2xl">
+            “To enable people and businesses throughout the world to realize their full potential.and get it in front of the audience they deserve.
+          </p>
+          <p class="italic text-center text-2xl">
+           by building a more fulfilling, productive and successful and lasting world."
+          </p>
+        </div>
+        <div class="mt-20">
+          <h4 class="n-header mt-20">Our Services</h4>
+          <p class="italic text-center text-2xl">
+            "For now, we provide web services, mobile application."
+          </p>
+        </div>
+      </div>
+      <h6 class="n-header">Take a Look</h6>
+
+      <div class="">
+        <h3 class="text-center text-xl mx-10 my-10">Restourants Menu</h3>
+        <div class="flex mx-6 justify-between menu_div">
+          <div class="menu-block-1">
+            <img
+              class="menu-phone mx-15"
+              src="menu-img\menu-1.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <div class="menu-2 text-center items-center">
+            <img
+              class="menu-phone menu-2-i"
+              src="menu-img\menu-2.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="h-full">
+        <h3 class="text-center text-xl my-10">Restourants Websites</h3>
+
+        <div class="flex space-x-3 w-screen menu_div">
+          <div class="menu-block">
+            <img
+              class="menu-phone r-w-1"
+              src="rest-img\rest-web-1.gif"
+              alt=""
+              srcset=""
+            />
+          </div>
+
+          <div class="">
+            <img
+              class="menu-phone r-w-2"
+              src="rest-img\rest-web-2.gif"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="">
+            <img
+              class="menu-phone r-w-3"
+              src="rest-img\rest-web-3.gif"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-10 mt-5 mb-0 dark:bg-gray-900 text-center">
+      <div class="px-3 py-5">
+        <h6 class="dark:text-white">Created By - Soft Web 21</h6>
+        <p class="dark:text-white px-5 py-3">
+          Email Us At - softweb@softweb21.tech
+        </p>
+        <ul class="flex text-xs space-x-4 py-2 justify-center foot-ul">
+          <li
+            class="mx-3 px-2 py-2 cursor-pointer hover:text-cyan-300 dark:text-white"
+          >
+            <a href="#about-section" class="hover:text-cyan-300"> ABOUT</a>
+          </li>
+          <li
+            class="mx-3 px-2 py-2 cursor-pointer hover:text-cyan-300 dark:text-white"
+          >
+            BlOG
+          </li>
+          <li
+            class="mx-3 px-2 py-2 cursor-pointer hover:text-cyan-300 dark:text-white"
+          >
+            <button
+              type="button"
+              class="hover:text-cyan-300"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo"
+            >
+              CONTACT US
+            </button>
+          </li>
+
+          <!-- <li
+            class="mx-3 px-2 py-2 cursor-pointer hover:text-cyan-300 dark:text-white"
+          >
+            SIGN IN
+          </li> -->
+
+          <li
+            class="mx-3 px-2 py-2 cursor-pointer hover:text-cyan-300 dark:text-white"
+          >
+            <div class="dropdown">
+              <button
+                class="dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                OUR PROJECTS
+              </button>
+              <ul
+                class="dropdown-menu dark:bg-gray-900 dark:text-white border-2 border-white"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li class="border-b-2">
+                  <a
+                    class="dropdown-item text-sm text-white hover:bg-gray-900"
+                    href="star.html"
+                    >Star Delight</a
+                  >
+                </li>
+                <li class="border-b-2 hover:bg-gray-900 hover:text-cyan-300">
+                  <a
+                    class="dropdown-item text-sm hover:bg-gray-900 text-white"
+                    href="gokuli.html"
+                    >Gokuli Juce Center</a
+                  >
+                </li>
+                <li class="border-b-2 hover:bg-gray-900">
+                  <a
+                    class="dropdown-item text-sm hover:bg-gray-900 text-white"
+                    href="#"
+                    >Project-3(comming soon)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="px-4 mt-10 py-10 text-sm border-t-2 border-white text-center">
+        <p class="dark:text-white">
+          &copy;2021-2022, Inc. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!--  -->
+    <!-- form         -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Type Your Message Here
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- form begins here  -->
+          <div class="modal-body contact-form">
+            <form
+              action="index.php"
+              method="post"
+              autocomplete="on"
+              id="contact-form"
+            >
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Recipient :</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  name="name"
+                  id="recipient-name"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="recipient-Email" class="col-form-label"
+                  >Email :</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  name="email"
+                  id="recipient-Email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Message :</label
+                >
+                <textarea
+                  class="form-control"
+                  name="message"
+                  type="password"
+                  id="message-text"
+                  required="Give few lines"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer text-white">
+            <!-- <button
+              type="button"
+              class="btn btn-primary form-control bg-cyan-700 text-white"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button> -->
+            <button
+              type="submit"
+              class="btn btn-primary form-control bg-cyan-700 text-white"
+              value="Send Message"
+              data-bs-dismiss="modal"
+            >
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
